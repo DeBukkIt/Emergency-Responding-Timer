@@ -1,0 +1,57 @@
+<!--<?php
+	header('Content-Type: text/html; charset=utf-8');
+	
+	// get alarm timestemp from somewhere
+	// store it in a variable
+	// put the variable in the <body onload="start(...)"> function
+?>-->
+
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Ausrückezeit Monitor</title>
+  <meta name="description" content="Ausrückezeit Monitor">
+  <meta name="author" content="Leonard Bienbeck">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+<body onload="start(1609148459)"> <!-- insert this value using PHP e.g. -->
+
+	<div class="grid-container">
+	
+		<div class="grid-cell" style="background-color: green">
+			<h1 class="grid-title">Alarmierung</h1>
+			<h2 id="alarmzeit">um 88:88:88 Uhr</h2>
+		</div>
+		
+		<div class="grid-cell">
+			<h1 class="grid-clock" id="alarmzeit_clock">88:88 Min.</h1>
+			<h2 id="alarmzeit_subtitle">vergangen</h2>
+		</div>
+		
+		<div class="grid-cell" style="background-color: orange">
+			<h1 class="grid-title">Schutzziel 1</h1>
+			<h2 id="sz1zeit">um 88:88:88 Uhr</h2>
+		</div>
+		
+		<div class="grid-cell" id="sz1_cell">
+			<h1 class="grid-clock" id="sz1_clock">88:88 Min.</h1>
+			<h2 id="sz1_subtitle">verbleibend</h2>
+		</div>
+		
+		<div class="grid-cell" style="background-color: red">
+			<h1 class="grid-title">Schutzziel 2</h1>
+			<h2 id="sz2zeit">um 88:88:88 Uhr</h2>
+		</div>
+		
+		<div class="grid-cell" id="sz2_cell">
+			<h1 class="grid-clock" id="sz2_clock">88:88 Min.</h1>
+			<h2 id="sz2_subtitle">verbleibend</h2>
+		</div>
+		
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+body {
+  height: 100vH;
+}
+
+h2 {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	font-size: 48px;
+}
+
+h1 {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.grid-clock {
+	margin-top: 5%;
+	font-size: 128px;
+}
+
+.grid-title {
+	font-size: 96px;
+}
+
+.grid-cell {
+	border: solid;
+}
+
+.grid-container {
+  padding-top: 15px;
+  height: 95vH;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 5px;
+  grid-template-areas:
+    "Titel-Alarmzeit Alarmzeit-Stopwatch"
+    "Titel-Schutzziel-1 Schutzziel-1-Countdown"
+    "Titel-Schutzziel-2 Schutzziel-2-Countdown";
+}
